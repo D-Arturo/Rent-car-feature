@@ -1,0 +1,24 @@
+<form action="/rentalCars/search" method="POST">
+    <input type="search" name="searchCars">
+    <input type="submit" value="Buscar">
+</form>
+
+
+<section>
+
+    <ul>
+        {{#each cars}}
+            {{#ifEquals availability 'yes'}}
+                <li>
+                    <a href="/rentalCars/detail/{{_id}}">
+                        <p><img src="{{carImage}}" alt="Car image"></p>
+                        <p>Marca: {{carBrand}}</p>
+                        <p>Modelo: {{carModel}}</p>
+                        <p>Tipo: {{carType}}</p>
+                    </a>
+                </li>
+            {{/ifEquals}}
+        {{/each}}
+    </ul>
+
+</section>
