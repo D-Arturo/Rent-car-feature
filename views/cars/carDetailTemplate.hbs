@@ -1,58 +1,30 @@
 
-        <h2>Detalles</h2>
+        <section class="container">
+            <h2>Detalles</h2>
 
-        <figure><img src="{{this.carImage}}" alt="Logo"></figure>
+        <figure>
+            <img src="{{this.carImage}}" alt="Logo">
+        </figure>
 
-        <section>            
-            <p>Marca: {{this.carBrand}}</p>
-        </section>
-
-        <section>            
-            <p>Modelo del coche: {{this.carModel}}</p>
-        </section>
-
-        <section>            
-            <p>Precio alquiler: {{this.leasingPrice}}</p>
-        </section>
-
-        <section>            
-            <p>Número de asientos: {{this.seatsNumber}}</p>
-        </section>
-
-        <section>            
-            <p>Número de puertas: {{this.doorNumber}}</p>
-        </section>
-
-        <section>            
-            <p>Tamaño maletero: {{this.trunkSize}}</p>
-        </section>
-
-        <section>            
-            <p>co2 Emisiones: {{this.co2Emissions}}</p>
-        </section>
-
-        <section>            
-            <p>Tipo de coche: {{this.carType}}</p>
-        </section>
-
-        <section>            
-            <p>Aire acondicionado: {{this.airConditioner}}</p>
-        </section>
-
-        <section>            
-            <p>Tipo de transmisión: {{this.transmissionType}}</p>
-        </section>
-
-        <section>            
-            <p>Tipo de motor: {{this.motorType}}</p>
-        </section>
-
-        <section>
-            <p>Disponibibilidad: {{this.availability}}</p>
-        </section>
-
+         <ul>
+             <li>Marca: {{this.carBrand}}</li>
+             <li>Modelo del coche: {{this.carModel}}</li>
+             <li>Precio alquiler: {{this.leasingPrice}}</li>
+             <li>Número de asientos: {{this.seatsNumber}}</li>
+             <li>Número de puertas: {{this.doorNumber}}</li>
+             <li>Tamaño maletero: {{this.trunkSize}}</li>
+             <li>CO2 Emisiones: {{this.co2Emissions}}</li>
+             <li>Tipo de coche: {{this.carType}}</li>
+             <li>Aire acondicionado: {{this.airConditioner}}</li>
+             <li>Tipo de transmisión: {{this.transmissionType}}</li>
+             <li>Tipo de motor: {{this.motorType}}</li>
+             <li>Disponibibilidad: {{this.availability}}</li>
+         </ul>           
+       
         <a href="/rentalCars/deleteCar/{{this._id}}">Borrar</a>
         <a href="/rentalCars/updateCar/{{this._id}}">Editar</a>
         <a href="/rentalCars/all">Atrás</a>
         <a href="/rentalCars/leasingForm/{{this._id}}">Alquilar</a>
 
+        </section>
+        
